@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <EditText
+        android:id="@+id/ed1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Digite o 1º Número"
+        android:textAlignment="center"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/ed2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Digite o 2º Número"
+        android:layout_below="@id/ed1"
+        android:textAlignment="center"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/btSoma"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Somar"
+        android:layout_below="@id/ed2"/>
+
+    <Button
+        android:id="@+id/btSubtracao"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Subtrair"
+        android:layout_below="@id/btSoma"/>
+
+    <Button
+        android:id="@+id/btMultiplicacao"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Multiplicar"
+        android:layout_below="@id/btSubtracao"/>
+
+    <Button
+        android:id="@+id/btDivisao"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Dividir"
+        android:layout_below="@id/btMultiplicacao"/>
+
+</RelativeLayout>
